@@ -1,2 +1,7 @@
 @import '_null_style';
-@import '_base/variables';
+@import '_fonts';
+@import 'base/_variables';
+
+html {
+    font-family: "Museo Moderno", sans-serif;
+}
