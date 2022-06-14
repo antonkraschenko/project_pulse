@@ -15,23 +15,23 @@ gulp.task('server', function() {
 });
 
 gulp.task('styles', function() {
-    return gulp.src('src/sass/*.+(scss|sass)')
+    return gulp.src('src/sass/**/*.+(scss|sass)')
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(rename({
         prefix: "",
         suffix: ".min",
       }))
-    .pipe(autoprefixer({
-            overrideBrowserslist: ['last 2 version'],
-			cascade: false
-		}))
+      .pipe(autoprefixer({
+        overrideBrowserslist: ['last 10 version'], 
+        grid: true
+        }))
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(gulp.dest('src/css'))
     .pipe(browserSync.stream());
 });
 
 gulp.task('watch', function() { 
-    gulp.watch('src/sass/*.+(scss|sass)', gulp.parallel('styles'))
+    gulp.watch('src/sass/**/*.+(scss|sass)', gulp.parallel('styles'))
     gulp.watch('src/*.html').on('change', browserSync.reload)
 });
 

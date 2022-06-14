@@ -1,0 +1,42 @@
+
+.header {
+
+    display: flex;
+    justify-content: space-between;
+
+    &__logo {
+        max-width: 251px;
+        img {
+            width: 100%;
+        } 
+    }
+
+    &__official {
+        text-align: center;
+        font-size: 12px;
+        color: $secondary;
+
+        span{
+            display: block;
+            font-size: 18px;
+            margin-top: 7px;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__tell {
+        color: $secondary;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    &__button {
+        padding: 10px 20px;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+}
+

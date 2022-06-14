@@ -1,7 +1,35 @@
 @import '_null_style';
 @import '_fonts';
 @import 'base/_variables';
+@import 'blocks/_header';
+@import 'blocks/_promo';
+@import 'blocks/_buttons';
+
+
 
 html {
     font-family: "Museo Moderno", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: $primery;
 }
+
+.container {
+    margin: 0 auto;
+    max-width: 972px;
+    padding: 0 15px;
+    
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: hidden;
+    main {
+        flex: 1 1 auto;
+    }
+}
+
+
+
