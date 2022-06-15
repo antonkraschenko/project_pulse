@@ -1,0 +1,40 @@
+.consultation {
+
+    background: url('../images/bg/body-bg.jpeg') center center/cover no-repeat;    
+    padding-top: 100px;
+    padding-bottom: 105px;
+
+        @media (max-width: 575.98px) {
+            padding-top: 60px;
+            padding-bottom: 70px;
+        }
+
+    &__title {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 36px;
+        color: $secondary;
+        max-width: 800px;
+        line-height: 150%;
+
+        @media (max-width: 575.98px) {
+            font-size: 30px;
+            line-height: 130%;
+
+        }
+    }
+
+    &__descr {
+        margin-top: 10px;
+        color: $secondary;
+        font-size: 20px;
+        line-height: 150%;
+        font-weight: 400;
+
+            @media (max-width: 575.98px) {
+                font-size: 16px;
+                margin-top: 15px;
+            }
+    }
+}
+
