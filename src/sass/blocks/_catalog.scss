@@ -1,0 +1,240 @@
+
+.catalog {
+
+    padding-bottom: 80px;
+
+    &__title {
+        color: $dark;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 30px;
+    }
+
+    &__tabs {
+        margin-top: 45px;
+        margin-bottom: 55px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+        transform: skewX(-25deg);
+    }
+
+    &__tab {
+        border: 2px solid #D0D0D0;
+        width: 222px;
+        height: 52px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #6B6B6B;
+        font-size: 18px;
+        line-height: 50px;
+        transition: all 0.5s;
+        
+        div {
+            transform: skewX(25deg);
+        }
+        
+        &_active {
+            background-color: $primery;
+            color: #fff;
+            border: none;
+        }
+
+        &:hover {
+            box-shadow: 3px 3px 15px #e26969;
+            border: none; 
+        }   
+    }
+    
+}
+
+// -------------------------------
+
+
+
+.catalog__content {
+
+    .catalog-item {
+
+        width: 300px;
+        min-height: 440px;
+        border: 2px solid #E8E8E8;
+        padding: 20px;
+
+		&__image {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: 200px;
+		}
+
+		&__title {
+            margin-top: 15px;
+            color: $dark;
+            font-weight: 700;
+            font-size: 16px;
+            text-align: center;
+		}
+
+		&__descr {
+            margin-top: 15px;
+            font-weight: 300;
+            line-height: 20px;
+            color: $dark;
+            text-align: center;
+		}
+
+		&__link {
+            display: block;
+            margin-top: 15px;
+            color: $primery;
+            text-decoration: underline;
+            text-align: center;
+		}
+        hr {
+            margin-top: 17px;
+            border: 1px solid #E8E8E8;
+            margin-bottom: 20px;
+        }
+
+		&__footer {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            align-items: center;
+		}
+
+		&__prices {
+		}
+
+		&__old-price {
+            color: $light;
+            font-weight: 300;
+            font-size: 14px;
+            text-decoration: line-through;
+		}
+
+		&__price {
+            color: $dark;
+            font-weight: 700;
+            font-size: 20px;
+		}
+
+		&__button {
+            width: 130px;
+            height: 44px;
+            font-weight: 500;
+            font-size: 14px;
+            transition: all 0.5s;
+		}
+
+        &__wrapper {
+            
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .catalog__content {
+            
+//     display: flex;
+//     gap: 17px;
+//     flex-wrap: wrap;
+//     justify-content: center;
+// }
+// .catalog-item {
+
+//     flex: 1 1 30%;
+    
+//     text-align: center;
+//     border: 2px solid #E8E8E8;
+//     padding: 20px 18px;
+//     min-width: 260px;
+//     min-height: 442px;
+
+//     &__image {
+//         display: block;
+//         margin: 0 auto;
+//         max-width: 100%;
+//         height: 200px;
+//     }
+
+//     &__title {
+//         margin-top: 15px;
+//         color: $dark;
+//         font-weight: 700;
+//         font-size: 16px;
+//     }
+
+//     &__descr {
+//         margin-top: 15px;
+//         font-weight: 300;
+//         line-height: 20px;
+//         color: $dark;
+
+//     }
+
+//     &__link {
+//         display: inline-block;
+//         margin-top: 10px;
+//         color: $primery;
+//         text-decoration: underline;
+//     }
+//     hr {
+//         margin-top: 17px;
+//         border: 1px solid #E8E8E8;;
+//     }
+//     &__footer {
+//         display: flex;
+//         justify-content: space-between;
+//         margin-top: 20px;
+//     }
+
+//     &__prices {
+//         text-align: start;
+//         flex: 1 1 50%;
+//     }
+
+//     &__old-price {
+//         color: $light;
+//         font-weight: 300;
+//         font-size: 14px;
+//         text-decoration: line-through;
+//     }
+
+//     &__price {
+//         color: $dark;
+//         font-weight: 700;
+//         font-size: 20px;
+//     }
+
+//     &__button {
+        
+//         flex: 1 1 50%;
+//         height: 44px;
+//         color: #fff;
+//         font-weight: 500;
+//         font-size: 14px;
+//         transition: all 0.5s;
+
+//     }
+// }
+
+
