@@ -8,7 +8,7 @@ $(document).ready(function(){
             {
                 breakpoint: 992,
                 settings: {
-                    dots: true,
+                    dots: false,
                     arrows: false
                 }
             }
@@ -35,4 +35,4 @@ $(document).ready(function(){
     toggleClass('.catalog-item__back');
 
 
-  });
+});
