@@ -14,23 +14,39 @@
     &__tabs {
         margin-top: 45px;
         margin-bottom: 55px;
+        margin-left: 10px;
+        margin-right: 10px;
         display: flex;
         justify-content: center;
         text-align: center;
         gap: 10px;
         transform: skewX(-25deg);
+        align-items: center;
+        
+           
+        @media (max-width: 639.98px) {
+                margin-top: 35px;
+                margin-bottom: 45px;
+                flex-wrap: wrap;
+               
+
+            }
     }
 
     &__tab {
         border: 2px solid #D0D0D0;
+        padding: 17px;
         width: 222px;
-        height: 52px;
-        text-align: center;
+        min-height: 52px;
         text-transform: uppercase;
         color: #6B6B6B;
         font-size: 18px;
-        line-height: 50px;
         transition: all 0.5s;
+
+            @media (max-width: 639.98px) {
+                font-size: 16px;
+                
+            }
         
         div {
             transform: skewX(25deg);
