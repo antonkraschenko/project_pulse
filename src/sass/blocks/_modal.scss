@@ -1,0 +1,73 @@
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, .56);
+    
+    
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 380px;
+    min-height: 400px;
+    background: #F2F2F2;
+    padding: 34px 32px 39px 32px;
+
+    @media (max-width: 575.98px) {
+       min-width: 290px;
+    }
+
+    &__subtitle {
+        color: $dark;
+        font-weight: 700;
+        font-size: 19px;
+        text-align: center;
+
+            @media (max-width: 575.98px) {
+                font-size: 16px;
+            }
+    }
+    &__desc {
+        color: $dark;
+        font-weight: 700;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 10px;
+
+            @media (max-width: 575.98px) {
+                font-size: 12px;
+            }
+    }
+    &__close {
+        position: absolute;
+        top: -10px;
+        right: -40px;
+        font-size: 40px;
+        color: $primery;
+        cursor: pointer;
+
+            @media (max-width: 575.98px) {
+                right: 7px;
+                top: 0px;
+            }
+    }
+    &_mini {
+        
+        min-height: 143px;
+        padding: 35px 67px;
+            @media (max-width: 575.98px) {
+                padding: 35px 40px;
+            }
+    }
+
+}
+
+#consultation, #order, #thanks {
+    display: none;
+}

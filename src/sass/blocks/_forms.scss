@@ -18,5 +18,19 @@
     &__button {
         padding: 17px 30px;
         font-size: 16px;
+
+            @media (max-width: 575.98px) {
+               font-size: 14px;
+               padding: 17px 10px;
+            }
     }
+    &_mt25 {
+        margin-top: 25px;
+    }
+
+    @media (max-width: 575.98px) {
+
+    }
+    
+
 }
