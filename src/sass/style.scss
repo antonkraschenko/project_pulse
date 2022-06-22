@@ -1,6 +1,8 @@
+@import 'base/_variables';
+@import 'base/_animations';
+
 @import '_null_style';
 @import '_fonts';
-@import 'base/_variables';
 @import 'blocks/_header';
 @import 'blocks/_promo';
 @import 'blocks/_buttons';
@@ -14,6 +16,7 @@
 @import 'blocks/_footer';
 @import 'blocks/_modal';
 @import 'blocks/_pageup';
+
 
 
 

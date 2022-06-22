@@ -101,5 +101,8 @@ $(document).ready(function(){
         return false;
     });
 
+    // Animate
+
+    new WOW().init();
    
 });
